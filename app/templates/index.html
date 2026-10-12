@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <link href="/bootstrap-4.0.0-dist/css/bootstrap.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4bf07ee17f.js" crossorigin="anonymous"></script>
+    <title>Welcome to Major Project </title>
+    <link rel="icon" type="image/x-icon" href="/Images/fire.png">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+@viewport{
+    width: device-width;
+    zoom: 1.0;
+}
+hr.style-one {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc,#333, #ccc);
+}
+
+body{
+    min-width: 320px;
+    background-color: #f5f5f5;
+    display: block;
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 460;
+    letter-spacing: -.022em;
+    font-family:"SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif ;
+}
+.top-side{
+    background-color: #f5f5f5;
+}
+
+.intro-h1{
+    color: #000;
+    font-family: 'Signika Negative', sans-serif;
+}
+.links .nav-link{
+    align-items: center;
+}
+
+nav{
+    filter: alpha(opacity=50);
+    display: flex;
+    height: 90px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+nav ul{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav ul li a{
+    padding: 30px;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+    font-family: inherit;
+}
+
+nav ul li a:hover{
+    color:purple
+}
+
+footer{
+    width: 100%;
+    position: relaive;
+    bottom: 0;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 15px;
+    line-height: 20px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+.row{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.col{
+    flex-basis: 25%;
+    padding: 10px;
+    line-height: 25px;
+}
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+.logo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+.col-logo{
+    padding: 30px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+i{
+    color: white;
+    padding: 16px;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: aliceblue;
+}
+h2{
+    color: aliceblue;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.start{
+    text-align: center;
+    height: 700px;
+    padding: 20px;
+}
+.start span{
+    padding: 15px;
+}
+.start a{
+    color:#2997ff;
+    font-family:"SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif ;
+    font-size: 21px;
+    text-decoration: none;
+}
+.start a:hover{
+    cursor: pointer;
+}
+.photo img{
+    width: 100%;
+    padding: 10px 10px 10px;
+    height: 800px;
+}
+hr{
+    background-color: white;
+    height: 0.1px;
+    margin-top: 10px;
+}
+.hr-bottom{
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+form button .fas{
+    font-size: 16px;
+    color: #ccc;
+}
+.social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.copyright{
+    text-align: center;
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;   
+    animation: moving 2s linear infinite;
+    overflow: hidden;
+}
+
+.column{
+    width: 100%;
+}
+@media(min-width: 600px){
+    .column{
+        width: 50%;
+    }
+}
+.bottom-logo{
+    margin-left: 100px;
+}
+.logo-text{
+    margin-left: 100px;
+}
+
+.container {
+	text-align: center;
+	position: relative;
+	width: 300px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+button {
+    font-family: Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #E040FB, #00BCD4);
+    font-weight: 100;
+    position: relative;
+    cursor: pointer;
+    height: 100px;
+    width: 280px;
+    border: 0;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    letter-spacing: 0.2em;
+    overflow: hidden;
+    box-shadow: 0 4px 12px 0 rgba(152, 160, 180, 10);
+    margin-bottom: 10px;
+    z-index: 5;
+}
+button:hover .startBtn {
+    -webkit-animation: gradient 3s ease infinite;
+    -moz-animation: gradient 3s ease infinite;
+    animation: gradient 3s ease infinite;
+}
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@-moz-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+    </style>
+</head>
+<body>
+    <main class="top-side">
+    <nav>
+        <ul class="links">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="team.html" target="_blank">Team</a></li>
+            <li><a class="nav-link" href="tech-used.html" target="_blank">Tech-Used</a></li>
+        </ul>
+    </nav>
+    <hr class="style-one">
+        <div class="start">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSc-14BOqnJc69J0BP7zSaLcetjyQ4r05oaAuEbYQQ5aNDOpOg/viewform" target="_blank">
+            <a href="#" onclick="startWebcam()" id="start">
+                <span>
+                    KNOW YOUR VEHICLE
+
+                    <!-- <i class="fa-sharp fa-regular fa-coins" style="padding: 5px; font-size:15px; color:#2997ff;"></i> -->
+                </span>
+            </a>
+
+            <img id="video_feed" autoplay controls>
+
+        </div>
+
+        <script>
+            var video = document.getElementById('video_feed');
+            var start_button = document.getElementById('start');
+            var running = false;
+            
+            function startWebcam() {
+              if (!running) {
+                start_button.disabled = true;
+                // stop_button.disabled = false;
+                video.src = '/video_feed';
+                running = true;
+              }
+            }
+            
+            function stopWebcam() {
+              if (running) {
+                start_button.disabled = false;
+                stop_button.disabled = true;
+                video.src= '';
+                running = false;
+                }
+            }
+      </script>
+
+        </main>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <div class="col-logo">
+                <img class="bottom-logo" width="150px" height="150px" src="Images/car.png" alt="Logo">
+                <p>Know your Vehicle</p></div>
+            </div>
+            <div class="col">
+                <h3>Contact Us <div class="underline"><span></span></div></h3>
+                <p>YUVRAJ CHAWLA</p>
+                <p>+91-9729006717</p>
+                <p class="email-id">chawla2255@gmail.com</p>
+                <P>ANANYA</P>
+                <p>+91-7275220011</p>
+                <p class="email-id">aananya2425@gmail.com</p>
+                <form>
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Enter your Email-Id" required>
+                    <button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+            </div>
+            <div class="col">
+                <h3>Link <div class="underline"><span></span></div></h3>
+                <ul>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="team.html" target="_blank">Team</a></li>
+                    <li><a href="tech-used.html" target="_blank">Tech-Used</a></li>
+                    <li><a href="#" target="_blank"></a></li>
+                </ul>
+                <div class="social-icons">
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-bottom">
+        <p class="copyright">YUVRAJ CHAWLA© 2023 - All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Number plate detection</title>
+  </head>
+  <body>
+    <h1>Number plate detection</h1>
+    <div>
+      <button onclick="startWebcam()">Start Webcam</button>
+      <button onclick="stopWebcam()">Stop Webcam</button>
+    </div>
+    <div>
+      
+    </div>
+    
+
+  </body>
+</html> 
